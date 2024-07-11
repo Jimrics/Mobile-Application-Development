@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/initialHeightTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Initial Height: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/initialWeightTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Initial Weight: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/initialBmiTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Initial BMI: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/currentWeightTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Weight: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/currentBmiTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current BMI: "
+        android:textSize="18sp" />
+
+</LinearLayout>

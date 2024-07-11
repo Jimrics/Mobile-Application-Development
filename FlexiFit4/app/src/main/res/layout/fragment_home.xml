@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".DashboardActivity"
+    android:background="@color/white">
+
+    <!-- Toolbar -->
+
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.0"
+        android:scrollbars="none"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!-- Running Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/running"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#0F52BA"
+                android:clickable="true"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="RUNNING"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <!-- Replace with your Lottie Animation View -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="300dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/running" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Cycling Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cycling2"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#50C878"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Cycling"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <!-- Replace with your Lottie Animation View -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="300dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lottie_cycling_animation" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Strength Training Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/StrengthTraining"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FFFFE0"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Strength Training"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <!-- Replace with your Lottie Animation View -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="300dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/pullups_animation" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Your Targets:\n 1. PullUps: 20 \n 2. Push Ups: 50 \n 3. Duration: 1 Hour"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gym"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#50C878"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Gym"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <!-- Replace with your Lottie Animation View -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="300dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lottie_cycling_animation" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/user"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#50C878"
+                app:cardCornerRadius="20dp"
+                android:layout_marginBottom="180px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="User"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <!-- Replace with your Lottie Animation View -->
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="300dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lottie_cycling_animation" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Placeholder Cards -->
+            <!-- Add more cards as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

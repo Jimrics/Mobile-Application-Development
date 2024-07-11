@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".SignupFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/signup_bg2"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="-400dp"
+        android:alpha="0.8"/>
+
+    <!-- CardView for the sign-up form -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signupCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Username Label -->
+            <TextView
+                android:id="@+id/usernameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Username Input Field -->
+            <EditText
+                android:id="@+id/EmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Email"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Password Label -->
+            <TextView
+                android:id="@+id/passwordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Password Input Field -->
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Enter your password"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Height Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (cm):"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Height Input Field -->
+            <EditText
+                android:id="@+id/heightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your height"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Weight Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (kg):"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Weight Input Field -->
+            <EditText
+                android:id="@+id/weightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your weight"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Age Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Age Input Field -->
+            <EditText
+                android:id="@+id/ageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your age"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Calculate BMI Button -->
+            <Button
+                android:id="@+id/calculateBmiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate BMI"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- BMI TextView -->
+            <TextView
+                android:id="@+id/bmiTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp"
+                android:visibility="gone"/>
+
+            <!-- Sign Up Button -->
+            <Button
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
